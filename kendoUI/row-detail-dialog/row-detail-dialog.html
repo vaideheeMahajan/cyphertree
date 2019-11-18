@@ -1,0 +1,62 @@
+<style>
+    .md-subhead{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .jcp-subheader{
+        height: 40px;
+        background-color: cornflowerblue;
+    }
+    margin-20{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    temp-background-color{
+        background-color: white;
+    }
+</style>
+<div class="layout-fill white-background" ng-controller="RowDetailDialogController as vm">
+		<md-subheader class="md-no-sticky">
+			<div class=" jcp-subheader layout-row layout-align-start-center">
+				<div class="md-subhead">
+					{{"Details"}}
+                </div>
+                <span flex></span>
+				<md-button aria-label="Back to List" ng-click="vm.gotoHomePage();" title="{{'Close'}}">Back
+                    <!-- <md-icon md-font-icon="icon-home"></md-icon> -->
+                    <!-- <i class="material-icons">arrow back</i> -->
+				</md-button>
+			</div>
+		</md-subheader>
+    <md-card class="">
+        <md-card-content>
+            <div layout="column">
+                <div flex layout="row" class="margin-20">
+                    <label style="margin:16px" flex="40">Star Cast Male</label>
+                    <p class="temp-background-color" flex="60">{{vm.selectedItem.male}}</p>
+                </div>
+                <div flex layout="row" class="margin-20">
+                    <label style="margin:16px" flex="40">Start Cast Female</label>
+                    <p class="temp-background-color" flex="60">{{vm.selectedItem.female}}</p>
+                </div>
+                <div flex layout="row" class="margin-20">
+                    <label style="margin:16px" flex="40">Movie Name</label>
+                    <p class="temp-background-color" flex="60">{{vm.selectedItem.movie_name}}</p>
+                </div>
+                <div flex layout="row" class="margin-20">
+                    <label style="margin:16px" flex="40">Rating</label>
+                    <p class="temp-background-color" flex="60">{{vm.selectedItem.rating}}</p>
+                </div>
+                <div flex layout="row" class="margin-20">
+                    <label style="margin:16px" flex="40">Genre</label>
+                    <p class="temp-background-color" flex="60">{{vm.selectedItem.genre}}</p>
+                </div>
+            </div>
+            
+        </md-card-content>
+    </md-card>
+
+
+</div>

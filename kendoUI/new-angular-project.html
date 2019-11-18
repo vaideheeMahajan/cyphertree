@@ -1,0 +1,16 @@
+<style>
+    .k-grid-content { 
+        height: calc(100vh - 101px) !important;
+    }
+</style>
+<div id="example">
+    <div ng-controller="newAngularProjectController as vm">
+        <kendo-grid options="vm.gridOptions" id="my-kendo-grid" class="k-widget k-grid">
+            <div k-detail-template>
+                <div>
+                    <div kendo-grid k-options="vm.childGridOptions"></div>
+                </div>
+            </div>
+        </kendo-grid>
+    </div>
+</div>
