@@ -6,5 +6,5 @@ xhttp.onreadystatechange = function() {
 	console.log("get");
     }
 };
-xhttp.open("GET", "kendoUI/abc.json", true);
+xhttp.open("GET", "", true);
 xhttp.send();

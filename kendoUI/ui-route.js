@@ -15,12 +15,12 @@
 
             .state('home', {
                 url: '/home',
-                templateUrl: '../kendoUI/new-angular-project.html'
+                templateUrl: '../kendoUI/app/view/new-angular-project.html'
             })
 
             .state('details', {
                 url: '/details',
-                templateUrl: '../kendoUI/row-detail-dialog/row-detail-dialog.html',
+                templateUrl: '../kendoUI/app/row-detail-dialog/view/row-detail-dialog.html',
                 params: {
 					data: null
 				},
